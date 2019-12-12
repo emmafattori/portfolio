@@ -5,3 +5,30 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .visually-hidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+header, section, footer, div, h1, h2, h3, h4, h5, h6, p, a, li, ul, nav{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+// Fonts
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Dancing Script', cursive;
+
+html{
+	font-size: 125%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.wrapper{
+	width: 90%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+

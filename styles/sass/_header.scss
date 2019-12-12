@@ -1,0 +1,70 @@
+header{
+	background-image: linear-gradient(rgba(208,209,203,0.1), rgba(208,209,203,0.1)),
+	url(./assets/header-image-2.jpg);
+	background-size: cover;
+	background-position: 30%, 50%;
+	min-height:450px;
+	color:white;
+	text-align: center;
+	position: relative;
+
+	nav{
+		text-transform: uppercase;
+		padding-top:1%;
+
+		ul{
+			display: flex;
+			justify-content: space-evenly;
+
+			li{
+				list-style-type: none;
+				
+				a{
+					font-size: 0.8rem;
+					color: black;
+					letter-spacing: 2px;
+					transform: linear 1s;
+					
+				}
+			}
+		}
+	}
+
+	.header-container{
+		margin-top:17%;
+		line-height:200%;
+
+		h1{
+			text-transform: uppercase;
+			letter-spacing: 13px;
+			font-size: 2rem;
+		}
+		h3{
+			font-family: 'Dancing Script', cursive;
+			font-weight: 300;
+			letter-spacing: 4px;
+			font-size: 1rem;
+		}
+
+		a{
+			color: black;
+			text-transform: uppercase;
+			background-color: white;
+			padding: 1% 2%;
+			font-size: 0.7rem;
+			letter-spacing: 2px;
+			font-weight: 700;
+
+			&:hover,
+			&:focus{
+				border: 2px solid white;
+				background-color: black;
+				color: white;
+			}
+		}
+
+		
+	}
+
+}
+

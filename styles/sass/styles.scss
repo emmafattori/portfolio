@@ -1,1 +1,104 @@
 @import 'setup';
+@import 'header';
+
+
+// About Me Section Styling
+
+.about-me{
+	margin: 0 auto;
+	position: relative;
+
+	h5{
+		color: #E7E7E7;
+		font-size: 4rem;
+		position: absolute;
+		z-index: -5;
+		top: -30%;
+		left: 20%;
+		text-transform: uppercase;
+	}
+
+}
+
+.about-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10%;
+	line-height: 200%;
+
+	h2{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: #232323;
+		letter-spacing: 10px;
+	}
+
+	h3{
+		font-family: 'Dancing Script', cursive;
+		font-weight: 300;
+		letter-spacing: 4px;
+		font-size: 1rem;
+		color: #B8B8B8;
+	}
+
+
+	p{
+		text-align: center;
+		font-size: 0.8rem;
+		color: #B8B8B8;
+	}
+}
+
+.skills{
+	margin: 0 auto;
+	position: relative;
+
+	h5{
+		color: #E7E7E7;
+		font-size: 4rem;
+		position: absolute;
+		z-index: -5;
+		top: -30%;
+		left: 20%;
+		text-transform: uppercase;
+	}
+}
+
+.skills-gallery{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10%;
+	line-height: 200%;
+
+	h2{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: #232323;
+		letter-spacing: 10px;
+	}
+
+	ul{
+		display: flex;
+
+		li{
+			list-style-type: none;
+			font-size: 0.8rem;
+			margin: 2%;
+		}
+	}
+	
+
+}
+
+.portfolio{
+	margin-top: 50%;
+}
+
+
+
+
+
+
+@import 'mediaQueries';
