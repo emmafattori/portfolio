@@ -179,7 +179,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-header, section, footer, div, h1, h2, h3, h4, h5, h6, p, a, li, ul, nav {
+header, footer, div, h1, h2, h3, h4, h5, h6, p, a, li, ul, nav {
   margin: 0;
   padding: 0;
 }
@@ -197,7 +197,7 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 1080px;
+  max-width: 1175px;
   margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ header .header-container a:hover, header .header-container a:focus {
 }
 
 .about-me {
-  margin: 0 auto;
+  margin: 10% auto;
   position: relative;
 }
 
@@ -297,7 +297,6 @@ header .header-container a:hover, header .header-container a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5%;
   line-height: 200%;
 }
 
@@ -323,7 +322,7 @@ header .header-container a:hover, header .header-container a:focus {
 }
 
 .skills {
-  margin: 0 auto;
+  margin: 10% auto;
   position: relative;
 }
 
@@ -406,7 +405,7 @@ header .header-container a:hover, header .header-container a:focus {
 }
 
 .portfolio {
-  margin: 0 auto;
+  margin: 10% auto;
   position: relative;
 }
 
@@ -421,7 +420,6 @@ header .header-container a:hover, header .header-container a:focus {
 }
 
 .portfolio .portfolio-container {
-  margin: 5%;
   line-height: 200%;
 }
 
@@ -454,7 +452,7 @@ header .header-container a:hover, header .header-container a:focus {
 
 .portfolio .portfolio-container .gallery-tiles .left-tiles .project-one-tile h6 {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 10px;
   color: white;
 }
@@ -466,27 +464,19 @@ header .header-container a:hover, header .header-container a:focus {
   height: 220px;
 }
 
-.portfolio .portfolio-container .gallery-tiles .left-tiles .project-one-tile .overlay {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  background: grey;
-  opacity: 0.7;
-}
-
-.portfolio .portfolio-container .gallery-tiles .left-tiles .project-one-tile .overlay:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
 .portfolio .portfolio-container .gallery-tiles .left-tiles .project-one-tile a {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 0.6rem;
+  font-size: 1rem;
   color: black;
   text-align: center;
   margin-right: 10%;
   border-bottom: 2px solid black;
+}
+
+.portfolio .portfolio-container .gallery-tiles .left-tiles .quote-tile {
+  height: 40%;
+  background-color: white;
 }
 
 .portfolio .portfolio-container .gallery-tiles .right-tiles {
@@ -499,8 +489,121 @@ header .header-container a:hover, header .header-container a:focus {
   background-color: #EFEEEE;
 }
 
+.portfolio .portfolio-container .gallery-tiles .right-tiles .top-right .bottom {
+  margin: 2% 0;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .top-right .bottom h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  color: black;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .top-right .bottom a {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  margin-right: 10%;
+  border-bottom: 2px solid black;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .project-feature2 {
+  width: 55%;
+  background-color: #CBCBCB;
+  padding: 6%;
+  margin-right: 1%;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .project-feature2 h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .project-feature2 a {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  margin-right: 10%;
+  border-bottom: 2px solid black;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .square-tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  margin-left: 1%;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .square-tiles .square-tile-top img {
+  width: 100%;
+}
+
+.portfolio .portfolio-container .gallery-tiles .right-tiles .bottom-right .square-tiles .square-tile-bottom {
+  background-color: #EEEEEE;
+  height: 100%;
+}
+
 .contact {
-  margin-top: 35%;
+  margin: 10% auto;
+  position: relative;
+}
+
+.contact h5 {
+  color: #E7E7E7;
+  font-size: 4rem;
+  position: absolute;
+  z-index: -5;
+  top: -7%;
+  left: 20%;
+  text-transform: uppercase;
+}
+
+.contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 200%;
+}
+
+.contact .contact-container h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #232323;
+  letter-spacing: 10px;
+  line-height: 180%;
+  position: relative;
+}
+
+.contact .contact-container .contact-methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 @media (max-width: 400px) {
