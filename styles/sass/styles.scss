@@ -98,7 +98,7 @@
 			
 
 			i{
-				font-size: 1rem;
+				font-size: 2.5rem;
 				border: 1px solid black;
 				width: 25%;
 				padding: 2%;
@@ -202,7 +202,7 @@
 				}	
 
 				.quote-tile{
-					height:40%;
+					height:35%;
 					background-color: white;
 				}
 		}
@@ -275,14 +275,17 @@
 					margin-left: 1%;
 
 					.square-tile-top{
-						img{
-							width: 100%;
-						}
+						background-color: #EEEEEE;
+						height: 100%;
+						margin-bottom: 4%;
 					}
 
 					.square-tile-bottom{
-						background-color: #EEEEEE;
-						height: 100%;
+						img{
+							width: 100%;
+							height: 100%;
+						}
+						
 					}
 				}
 
@@ -297,8 +300,8 @@
 // End of portfolio section styling
 
 // Beginning of contact section styling
-.contact{
 
+.contact{
 	margin: 10% auto;
 	position: relative;
 
@@ -312,11 +315,10 @@
 		text-transform: uppercase;
 	}
 
-	.contact-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			line-height: 200%;
+	.contact-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 			h2{
 				font-size: 1.5rem;
@@ -325,15 +327,100 @@
 				letter-spacing: 10px;
 				line-height: 180%;
 				position: relative;
-				}
-			
+			}
+
 			.contact-methods{
-				display: flex;
 				width: 100%;
+				display: flex;
+				margin: 5% 0;
+
+				h4{
+					text-transform: uppercase;
+				}
+
+				.telephone, .email{
+					margin-right: 10%;
+					line-height: 200%;
+				
+				}
+
+				i{
+					font-size: 1rem;
+					border: 2px solid black;
+					text-align: center;
+					padding: 10px;
+				}
+			}
+
+			.form-contact{
+				width:100%;
+				margin: 2% 0;
+				display: flex;
+				flex-direction: column;
+				text-transform: uppercase;
+
+				input[type=text]{
+					width:60%;
+					margin: 1% 0;
+				}
+
+				input[type=submit]{
+					width:20%;
+					text-transform: uppercase;
+					padding: 1%;
+					border: 2px solid lightgrey;
+					background-color: white;
+
+					&:hover{
+						background: black;
+						color:white;
+					}
+				}
+
+			
 			}
 		}
 }
+// End of contact page styling
 
+// Start of blog section styling
 
+.blog{
+	
+	margin: 10% auto;
+	position: relative;
+
+	h5{
+		color: #E7E7E7;
+		font-size: 4rem;
+		position: absolute;
+		z-index: -5;
+		top: -20%;
+		left: 20%;
+		text-transform: uppercase;
+	}
+
+	.blog-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+			h2{
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				color: #232323;
+				letter-spacing: 10px;
+				line-height: 180%;
+				position: relative;
+			}
+
+			.blog-gallery{
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				margin: 5% 0;
+			}
+	}
+}
 
 @import 'mediaQueries';
