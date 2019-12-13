@@ -25,6 +25,17 @@ header{
 					color: black;
 					letter-spacing: 2px;
 					transform: linear 1s;
+
+					&:hover{
+						border-bottom: 2px solid black;
+					}
+
+
+					&:focus{
+						border-bottom: 2px solid black;
+					}
+
+
 					
 				}
 			}
@@ -67,4 +78,5 @@ header{
 	}
 
 }
+
 

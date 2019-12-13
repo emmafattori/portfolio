@@ -1,0 +1,35 @@
+footer{
+		nav{
+		text-transform: uppercase;
+		padding-bottom:3%;
+
+		ul{
+			display: flex;
+			justify-content: space-evenly;
+
+			li{
+				list-style-type: none;
+
+				a{
+					font-size: 0.8rem;
+					color: black;
+					letter-spacing: 2px;
+
+					&:hover, 
+					&:focus{
+						border-bottom: 2px solid black;
+					}
+					
+				}
+			}
+		}
+	}
+
+	
+}
+
+.copyright{
+		padding: 1% 0;
+		background-color: #CBCBCB;
+		text-align: center;
+	}

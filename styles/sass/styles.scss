@@ -1,5 +1,6 @@
 @import 'setup';
 @import 'header';
+@import 'footer';
 
 
 // About Me Section Styling
@@ -417,10 +418,39 @@
 			.blog-gallery{
 				width: 100%;
 				display: flex;
-				justify-content: space-evenly;
+				justify-content: space-between;
+				align-items: center;
 				margin: 5% 0;
+				background-color: #F1F1F1;
+
+				.blog-item{
+					width: 30%;
+					text-align: center;
+					margin: 5% 0;
+				
+				
+
+					h4{
+						margin: 5% 0;
+						text-transform: uppercase;
+						font-weight: 800;
+					}
+
+					a{
+						text-transform: uppercase;
+						font-weight: 400;
+						font-size: 0.8rem;
+						color: black;
+						text-align: center;
+						border-bottom: 2px solid black;
+						width: 50%;
+						text-align: center;
+					}
+				}
 			}
 	}
 }
+
+
 
 @import 'mediaQueries';

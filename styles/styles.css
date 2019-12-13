@@ -238,6 +238,14 @@ header nav ul li a {
           transform: linear 1s;
 }
 
+header nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+header nav ul li a:focus {
+  border-bottom: 2px solid black;
+}
+
 header .header-container {
   margin-top: 17%;
   line-height: 200%;
@@ -269,6 +277,40 @@ header .header-container a:hover, header .header-container a:focus {
   border: 2px solid white;
   background-color: black;
   color: white;
+}
+
+footer nav {
+  text-transform: uppercase;
+  padding-bottom: 3%;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer nav ul li {
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  font-size: 0.8rem;
+  color: black;
+  letter-spacing: 2px;
+}
+
+footer nav ul li a:hover, footer nav ul li a:focus {
+  border-bottom: 2px solid black;
+}
+
+.copyright {
+  padding: 1% 0;
+  background-color: #CBCBCB;
+  text-align: center;
 }
 
 .about-me {
@@ -697,10 +739,37 @@ header .header-container a:hover, header .header-container a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5% 0;
+  background-color: #F1F1F1;
+}
+
+.blog .blog-container .blog-gallery .blog-item {
+  width: 30%;
+  text-align: center;
+  margin: 5% 0;
+}
+
+.blog .blog-container .blog-gallery .blog-item h4 {
+  margin: 5% 0;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.blog .blog-container .blog-gallery .blog-item a {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: black;
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 50%;
+  text-align: center;
 }
 
 @media (max-width: 400px) {
