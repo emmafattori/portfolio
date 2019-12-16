@@ -358,13 +358,15 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-weight: 300;
   letter-spacing: 4px;
   font-size: 1rem;
-  color: #B8B8B8;
+  color: #8E898A;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .about-container p {
   text-align: center;
   font-size: 0.8rem;
-  color: #B8B8B8;
+  color: #676362;
 }
 
 .skills {
@@ -439,7 +441,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 
 .skills-gallery ul li h6 {
   text-align: left;
-  color: #B8B8B8;
+  color: #232323;
 }
 
 .skills-gallery ul li img {
@@ -484,6 +486,14 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   margin-top: 4%;
 }
 
+.portfolio .portfolio-container .gallery-tiles > div {
+  margin: 2%;
+}
+
+.portfolio .portfolio-container .gallery-tiles p {
+  color: #676362;
+}
+
 .portfolio .portfolio-container .gallery-tiles .project-item1 {
   -ms-grid-column: 1;
   grid-column: 1;
@@ -503,7 +513,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 }
 
 .portfolio .portfolio-container .gallery-tiles a {
-  border: 2px solid black;
+  border: 2px solid #232323;
   padding: 1%;
   text-transform: uppercase;
 }
@@ -516,6 +526,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 .portfolio .portfolio-container .gallery-tiles h6 {
   font-size: 1.2rem;
   text-transform: uppercase;
+  color: #232323;
 }
 
 .contact {
@@ -581,6 +592,10 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 .contact .contact-container .form-contact {
   width: 100%;
   margin: 2% 0;
+  text-transform: uppercase;
+}
+
+.contact .contact-container .form-contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +603,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-transform: uppercase;
 }
 
 .contact .contact-container .form-contact input[type=text] {
@@ -599,7 +613,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 .contact .contact-container .form-contact input[type=submit] {
   width: 20%;
   text-transform: uppercase;
-  padding: 1%;
   border: 2px solid lightgrey;
   background-color: white;
 }
@@ -683,6 +696,61 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   text-align: center;
 }
 
+@media (max-width: 1015px) {
+  i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 725px) {
+  .skills .skills-gallery li {
+    width: calc(100% / 3);
+  }
+  .portfolio h5 {
+    top: -11.5%;
+  }
+  .portfolio .portfolio-container .gallery-tiles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .portfolio .portfolio-container .gallery-tiles .project-item1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin: 4%;
+  }
+  .portfolio .portfolio-container .gallery-tiles .project-item2 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin: 4%;
+  }
+  .portfolio .portfolio-container .gallery-tiles .project-item3 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin: 4%;
+  }
+  .portfolio .portfolio-container .gallery-tiles .project-item4 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin: 4%;
+  }
+  .portfolio .contact h5 {
+    top: -11%;
+  }
+  footer nav {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   header .open {
     display: block;
@@ -752,40 +820,6 @@ ul {
     font-size: 3rem;
     top: -1%;
     left: 7%;
-  }
-  .portfolio .portfolio-container .gallery-tiles {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  .portfolio .portfolio-container .gallery-tiles .project-item1 {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin: 1%;
-  }
-  .portfolio .portfolio-container .gallery-tiles .project-item2 {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin: 1%;
-  }
-  .portfolio .portfolio-container .gallery-tiles .project-item3 {
-    -ms-grid-row: 3;
-    grid-row: 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin: 1%;
-  }
-  .portfolio .portfolio-container .gallery-tiles .project-item4 {
-    -ms-grid-row: 4;
-    grid-row: 4;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin: 1%;
   }
   .contact h5 {
     font-size: 2.8rem;
