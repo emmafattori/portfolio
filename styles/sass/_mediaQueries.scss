@@ -33,6 +33,15 @@
 			top: -10%;
 			left: 7%;
 		}
+
+		ul{
+			li{
+			width: calc(100% / 2);
+			i{
+				font-size: 1.7rem;
+			}
+		  }
+		}
 	}
 
 	.portfolio{
@@ -43,7 +52,4 @@
 		}
 	}
 
-	
-
-	
 }

@@ -323,7 +323,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-size: 4rem;
   position: absolute;
   z-index: -5;
-  top: -20%;
+  top: -27%;
   left: 20%;
   text-transform: uppercase;
 }
@@ -373,7 +373,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-size: 4rem;
   position: absolute;
   z-index: -5;
-  top: -20%;
+  top: -16%;
   left: 20%;
   text-transform: uppercase;
 }
@@ -389,7 +389,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5%;
   line-height: 200%;
 }
 
@@ -398,7 +397,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   text-transform: uppercase;
   color: #232323;
   letter-spacing: 10px;
-  line-height: 180%;
   position: relative;
 }
 
@@ -456,7 +454,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-size: 4rem;
   position: absolute;
   z-index: -5;
-  top: -7%;
+  top: -3.5%;
   left: 20%;
   text-transform: uppercase;
 }
@@ -470,7 +468,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   text-transform: uppercase;
   color: #232323;
   letter-spacing: 10px;
-  line-height: 180%;
   position: relative;
   text-align: center;
 }
@@ -511,7 +508,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-size: 4rem;
   position: absolute;
   z-index: -5;
-  top: -7%;
+  top: -8%;
   left: 20%;
   text-transform: uppercase;
 }
@@ -534,7 +531,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   text-transform: uppercase;
   color: #232323;
   letter-spacing: 10px;
-  line-height: 180%;
   position: relative;
 }
 
@@ -603,7 +599,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   font-size: 4rem;
   position: absolute;
   z-index: -5;
-  top: -20%;
+  top: -15%;
   left: 20%;
   text-transform: uppercase;
 }
@@ -626,7 +622,6 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   text-transform: uppercase;
   color: #232323;
   letter-spacing: 10px;
-  line-height: 180%;
   position: relative;
 }
 
@@ -688,6 +683,12 @@ footer nav ul li a:hover, footer nav ul li a:focus {
     font-size: 3rem;
     top: -10%;
     left: 7%;
+  }
+  .skills ul li {
+    width: calc(100% / 2);
+  }
+  .skills ul li i {
+    font-size: 1.7rem;
   }
   .portfolio h5 {
     font-size: 3rem;
