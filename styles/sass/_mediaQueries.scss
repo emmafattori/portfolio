@@ -5,8 +5,17 @@
 }
 
 @media(max-width:725px){
-
+	.about-me{
+		h5{
+			font-size: 3rem;
+			top: -13%;
+		}
+	}
 	.skills{
+		h5{
+			top: -13%;
+			font-size: 3rem;
+		}
 		.skills-gallery{
 			li{
 			width: calc(100% / 3);
@@ -17,10 +26,11 @@
 	
 	.portfolio {
 		h5{
-			top: -11.5%;
+			top: -1.5%;
+			font-size: 3rem;
 		}
 		
-	.portfolio-container{
+		.portfolio-container{
 
 		.gallery-tiles{
 		display:grid;
@@ -47,15 +57,35 @@
 				grid-column: 1;
 				margin: 4%;
 				}
-	}
+		}
 	
+	}
+
 }
 
-	.contact{
+		.contact{
+
+		margin: 15% 0;
+		
 		h5{
+			font-size: 3rem;
 			top: -11%;
 		}
+
+		.contact-methods{
+			margin: 10% 0;
+		}
 	  }
+
+	.blog{
+
+		h5{
+			top: -10%;
+			font-size: 3rem;
+		}
+		.blog-gallery{
+			flex-direction: column;
+		}
 	}
 
 	footer{
@@ -88,15 +118,10 @@
 			}
 			
 		}
-		
-	
 
 		.closed{
 			display:none;
 		}
-
-		
-
 		.desktop-nav{
 			display:none;
 		}
@@ -113,10 +138,6 @@
 			background-color: white;
 			}
 		
-
-		
-
-	
 		.header-container{
 		padding-top: 25%;
 
@@ -128,7 +149,7 @@
 
 	.about-me{
 		h5{
-			font-size: 3rem;
+			font-size: 2.5rem;
 			top: -10%;
 			left: 7%;
 		}
@@ -143,24 +164,25 @@
 
 	.skills{
 		h5{
-			font-size: 3rem;
+			font-size: 2rem;
 			top: -7%;
 			left: 7%;
 		}
-
-		ul{
-			li{
-			width: calc(100% / 2);
-			i{
-				font-size: 1.7rem;
-			}
-		  }
+		.skills-gallery{
+			ul{
+				li{
+					width: calc(100% / 2);
+						i{
+							font-size: 1.7rem;
+						}
+		 			 }
+				}
 		}
 	}
 
 	.portfolio{
 		h5{
-			font-size: 3rem;
+			font-size: 2.5rem;
 			top: -1%;
 			left: 7%;
 		}
@@ -169,8 +191,8 @@
 
 	.contact{
 		h5{
-			font-size: 2.8rem;
-			top: -10%;
+			font-size: 2rem;
+			top: -5%;
 			left: 7%;
 		}
 
@@ -180,9 +202,16 @@
 			.telephone, 
 			.email{
 				width: 100%;
+				margin: 5% 0;
 			}
-
 		}
+
+		.form-contact{
+			.name-input{
+				width: 90%;
+			}
+		}
+
 	}
 
 	.blog{
