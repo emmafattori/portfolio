@@ -201,15 +201,29 @@ html {
   margin: 0 auto;
 }
 
-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(208, 209, 203, 0.1)), to(rgba(208, 209, 203, 0.1))), url(./assets/header-image-2.jpg);
-  background-image: linear-gradient(rgba(208, 209, 203, 0.1), rgba(208, 209, 203, 0.1)), url(./assets/header-image-2.jpg);
-  background-size: cover;
-  background-position: 30%, 50%;
+.panorama {
+  width: 100%;
   min-height: 500px;
-  color: white;
-  text-align: center;
+  overflow: hidden;
   position: relative;
+  text-align: center;
+}
+
+.panorama img {
+  z-index: -5;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 0;
+  z-index: -5;
+}
+
+.panorama.default img {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 header .mobile-nav, header .open {
@@ -260,12 +274,14 @@ header .header-container h1 {
   text-transform: uppercase;
   letter-spacing: 13px;
   font-size: 2rem;
+  color: white;
 }
 
 header .header-container h3 {
   font-weight: 300;
   letter-spacing: 4px;
   font-size: 1rem;
+  color: white;
 }
 
 header .header-container a {
