@@ -277,22 +277,20 @@
 				form{
 					display: flex;
 					flex-direction:column;
-				}
+				
 
 				input[type=text]{
 					width:60%;
 					margin: 1% 0;
 				}
 
-				.message{
-					height: 150px;
+				textarea{
+					width:60%;
+					border:2px solid lightgray;
+					margin: 1% 0;
 				}
 
-				.message::placeholder{
-					position: relative;
-					top:0;
-					left:0;
-				}
+				
 
 				input[type=submit]{
 					width:20%;
@@ -305,6 +303,7 @@
 						color:white;
 					}
 				}
+			}
 
 			
 			}

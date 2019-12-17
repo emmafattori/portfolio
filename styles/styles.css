@@ -620,47 +620,25 @@ footer nav ul li a:hover, footer nav ul li a:focus {
           flex-direction: column;
 }
 
-.contact .contact-container .form-contact input[type=text] {
+.contact .contact-container .form-contact form input[type=text] {
   width: 60%;
   margin: 1% 0;
 }
 
-.contact .contact-container .form-contact .message {
-  height: 150px;
+.contact .contact-container .form-contact form textarea {
+  width: 60%;
+  border: 2px solid lightgray;
+  margin: 1% 0;
 }
 
-.contact .contact-container .form-contact .message::-webkit-input-placeholder {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.contact .contact-container .form-contact .message:-ms-input-placeholder {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.contact .contact-container .form-contact .message::-ms-input-placeholder {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.contact .contact-container .form-contact .message::placeholder {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.contact .contact-container .form-contact input[type=submit] {
+.contact .contact-container .form-contact form input[type=submit] {
   width: 20%;
   text-transform: uppercase;
   border: 2px solid lightgrey;
   background-color: white;
 }
 
-.contact .contact-container .form-contact input[type=submit]:hover {
+.contact .contact-container .form-contact form input[type=submit]:hover {
   background: black;
   color: white;
 }
@@ -866,18 +844,14 @@ ul {
     font-size: 1.5rem;
   }
   .about-me h5 {
-    font-size: 2.5rem;
-    top: -10%;
-    left: 7%;
+    display: none;
   }
   .about-me .about-container p {
     line-height: 180%;
     margin: 2% 0;
   }
   .skills h5 {
-    font-size: 2rem;
-    top: -7%;
-    left: 7%;
+    display: none;
   }
   .skills .skills-gallery ul li {
     width: calc(100% / 2);
@@ -886,14 +860,10 @@ ul {
     font-size: 1.7rem;
   }
   .portfolio h5 {
-    font-size: 2.5rem;
-    top: -1%;
-    left: 7%;
+    display: none;
   }
   .contact h5 {
-    font-size: 2rem;
-    top: -5%;
-    left: 7%;
+    display: none;
   }
   .contact .contact-methods {
     display: -webkit-box;
@@ -904,13 +874,11 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact .contact-methods .telephone,
-  .contact .contact-methods .email {
-    width: 100%;
-    margin: 5% 0;
+  .contact .contact-methods .telephone, .contact .contact-methods .email {
+    width: 50%;
   }
-  .contact .form-contact .name-input {
-    width: 90%;
+  .contact .form-contact form #name, .contact .form-contact form #phone, .contact .form-contact form #message, .contact .form-contact form #submit {
+    width: 100%;
   }
   .blog .blog-container .blog-gallery {
     -ms-flex-wrap: wrap;

@@ -61,12 +61,12 @@
 	
 	}
 
-}
+  }
 
 		.contact{
 
 		margin: 15% 0;
-		
+
 		h5{
 			font-size: 3rem;
 			top: -11%;
@@ -96,6 +96,7 @@
 }
 
 @media (max-width: 400px){
+	
 	header{
 		.open{
 			display: block;
@@ -126,7 +127,7 @@
 			display:none;
 		}
 		
-			.mobile-nav 
+		.mobile-nav 
 
 			ul {
 			position: absolute;
@@ -149,9 +150,7 @@
 
 	.about-me{
 		h5{
-			font-size: 2.5rem;
-			top: -10%;
-			left: 7%;
+			display:none;
 		}
 
 		.about-container{
@@ -164,9 +163,7 @@
 
 	.skills{
 		h5{
-			font-size: 2rem;
-			top: -7%;
-			left: 7%;
+			display:none;
 		}
 		.skills-gallery{
 			ul{
@@ -182,33 +179,32 @@
 
 	.portfolio{
 		h5{
-			font-size: 2.5rem;
-			top: -1%;
-			left: 7%;
+			display:none;
 		}
 
 	}
 
+
+
 	.contact{
 		h5{
-			font-size: 2rem;
-			top: -5%;
-			left: 7%;
+			display:none;
 		}
 
 		.contact-methods{
 			display:flex;
-			flex-direction: column;
-			.telephone, 
-			.email{
-				width: 100%;
-				margin: 5% 0;
+			flex-direction:column;
+
+			.telephone, .email{
+				width: 50%;
 			}
 		}
 
 		.form-contact{
-			.name-input{
-				width: 90%;
+			form{
+				#name, #phone, #message, #submit {
+					width:100%;
+				}
 			}
 		}
 
