@@ -203,7 +203,7 @@ html {
 
 .panorama {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -335,7 +335,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 }
 
 .about-me {
-  margin: 15% auto;
+  margin: 12% auto;
   position: relative;
 }
 
@@ -622,8 +622,10 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 
 .contact .contact-container .form-contact {
   width: 100%;
-  margin: 2% 0;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact .contact-container .form-contact form {
@@ -634,21 +636,26 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5%;
+  width: 50%;
 }
 
 .contact .contact-container .form-contact form input[type=text] {
-  width: 60%;
+  width: 100%;
   margin: 1% 0;
 }
 
 .contact .contact-container .form-contact form textarea {
-  width: 60%;
+  width: 100%;
   border: 2px solid lightgray;
   margin: 1% 0;
 }
 
 .contact .contact-container .form-contact form input[type=submit] {
-  width: 20%;
+  width: 100%;
   text-transform: uppercase;
   border: 2px solid lightgrey;
   background-color: white;
@@ -657,6 +664,16 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 .contact .contact-container .form-contact form input[type=submit]:hover {
   background: black;
   color: white;
+}
+
+.contact .contact-container .form-contact .photo {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.contact .contact-container .form-contact .photo img {
+  width: 100%;
+  height: 100%;
 }
 
 .blog {
@@ -739,7 +756,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 730px) {
   .about-me h5 {
     font-size: 3rem;
     top: -13%;
@@ -796,8 +813,28 @@ footer nav ul li a:hover, footer nav ul li a:focus {
     font-size: 3rem;
     top: -11%;
   }
+  .contact .contact-container .form-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-container .form-contact form {
+    width: 100%;
+    padding: 5%;
+    margin: 0;
+  }
+  .contact .contact-container .form-contact .photo {
+    width: 100%;
+    padding: 5%;
+    margin: 0;
+  }
   .contact .contact-methods {
     margin: 10% 0;
+    padding: 5%;
   }
   .blog h5 {
     top: -10%;
