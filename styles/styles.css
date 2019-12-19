@@ -466,7 +466,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 
 .skills-gallery ul li img {
   border: 1px solid black;
-  width: 40%;
+  width: 36%;
   padding: 2%;
 }
 
@@ -676,6 +676,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 .contact .contact-container .form-contact .photo img {
   width: 100%;
   height: 100%;
+  padding: 5%;
 }
 
 .blog {
@@ -813,7 +814,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   }
   .contact h5 {
     font-size: 3rem;
-    top: -11%;
+    top: -2%;
   }
   .contact .contact-container .form-contact {
     display: -webkit-box;
@@ -853,14 +854,15 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   header .open {
     display: block;
   }
   header .open i {
     padding-top: 3%;
-    font-size: 30px;
+    font-size: 40px;
     color: #153350;
+    text-shadow: 2px 3px 6px white;
   }
   header .exit {
     display: block;
@@ -879,8 +881,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
   header .desktop-nav {
     display: none;
   }
-  header .mobile-nav
-ul {
+  header ul {
     position: absolute;
     top: 0;
     right: 0;
@@ -934,6 +935,9 @@ ul {
   }
   .contact .form-contact form #name, .contact .form-contact form #phone, .contact .form-contact form #message, .contact .form-contact form #submit {
     width: 100%;
+  }
+  .blog h5 {
+    display: none;
   }
   .blog .blog-container .blog-gallery {
     -ms-flex-wrap: wrap;
